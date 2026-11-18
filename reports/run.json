@@ -5,8 +5,18 @@
     "defect",
     "normal"
   ],
-  "count": 2,
+  "count": 3,
   "results": [
+    {
+      "file": "bright-defect.png",
+      "score": 1.0,
+      "method": "heuristic",
+      "var": 0.1941,
+      "bright_frac": 0.5,
+      "needs_approval": true,
+      "notify": "posted-200",
+      "explanation": "skipped-no-key"
+    },
     {
       "file": "dark.png",
       "score": 0.0,
@@ -14,7 +24,8 @@
       "var": 0.0,
       "bright_frac": 0.0,
       "needs_approval": false,
-      "notify": "not-needed"
+      "notify": "not-needed",
+      "explanation": "skipped-no-key"
     },
     {
       "file": "noisy.png",
@@ -23,7 +34,8 @@
       "var": 0.0225,
       "bright_frac": 0.0016,
       "needs_approval": false,
-      "notify": "not-needed"
+      "notify": "not-needed",
+      "explanation": "skipped-no-key"
     }
   ]
 }
