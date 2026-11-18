@@ -1,0 +1,29 @@
+{
+  "threshold": 0.5,
+  "method": "heuristic",
+  "labels": [
+    "defect",
+    "normal"
+  ],
+  "count": 2,
+  "results": [
+    {
+      "file": "dark.png",
+      "score": 0.0,
+      "method": "heuristic",
+      "var": 0.0,
+      "bright_frac": 0.0,
+      "needs_approval": false,
+      "notify": "not-needed"
+    },
+    {
+      "file": "noisy.png",
+      "score": 0.093,
+      "method": "heuristic",
+      "var": 0.0225,
+      "bright_frac": 0.0016,
+      "needs_approval": false,
+      "notify": "not-needed"
+    }
+  ]
+}

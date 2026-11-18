@@ -1,0 +1,9 @@
+flowchart LR
+  A[Ingest: camera / screenshot / playwright-capture] --> B[Detect: Grounding-DINO boxes + CLIP score]
+  B --> C[Reason: Gemini vision explain]
+  C --> D{Score > threshold?}
+  D -- Yes --> E[n8n human approval required]
+  D -- No --> F[Log OK]
+  E --> G[Log run-json + screenshot evidence]
+  F --> G
+  G --> H[reports/run-report.md]

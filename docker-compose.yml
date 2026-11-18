@@ -1,0 +1,16 @@
+services:
+  triage:
+    build: .
+    volumes:
+      - ./evidence:/app/evidence
+      - ./reports:/app/reports
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - THRESHOLD=${THRESHOLD:-0.5}
+    command: python src/triage.py --input evidence --out reports/run.json
+  n8n:
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./n8n:/home/node/.n8n

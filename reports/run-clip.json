@@ -1,0 +1,31 @@
+{
+  "threshold": 0.5,
+  "method": "clip",
+  "labels": [
+    "defect",
+    "normal"
+  ],
+  "count": 2,
+  "results": [
+    {
+      "file": "dark.png",
+      "score": 0.0,
+      "method": "heuristic-fallback-no-clip-deps",
+      "var": 0.0,
+      "bright_frac": 0.0,
+      "clip_error": "pip install torch transformers (No module named 'transformers')",
+      "needs_approval": false,
+      "notify": "not-needed"
+    },
+    {
+      "file": "noisy.png",
+      "score": 0.093,
+      "method": "heuristic-fallback-no-clip-deps",
+      "var": 0.0225,
+      "bright_frac": 0.0016,
+      "clip_error": "pip install torch transformers (No module named 'transformers')",
+      "needs_approval": false,
+      "notify": "not-needed"
+    }
+  ]
+}
