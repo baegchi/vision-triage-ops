@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+.env
+n8n/
+reports/run.json
+reports/run-clip.json

@@ -3,4 +3,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src/
-CMD ["python", "src/triage.py", "--help"]
+COPY scripts/ ./scripts/
+COPY evidence/ ./evidence/
+CMD ["python", "scripts/run_demo.py"]
